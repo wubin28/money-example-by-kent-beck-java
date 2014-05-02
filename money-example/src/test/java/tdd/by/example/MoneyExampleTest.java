@@ -2,6 +2,8 @@ package tdd.by.example;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by benwu on 14-5-2.
  */
