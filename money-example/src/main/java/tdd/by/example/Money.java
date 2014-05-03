@@ -7,6 +7,7 @@ public class Money {
     // TODO-sin: Money rounding?
     protected int amount;
 
+    // TODO-sin: hashCode()
     public boolean equals(Object object) {
         Money money = (Money)object;
         // TODO-sin: Currency?
