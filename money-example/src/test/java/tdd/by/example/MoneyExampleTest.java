@@ -10,6 +10,9 @@ import static org.junit.Assert.assertTrue;
  * Created by benwu on 14-5-2.
  */
 public class MoneyExampleTest {
+
+    // TODO-story: $5 + 10 CHF = $10 if rate is 2:1
+
     @Test
     public void testMultiplication() {
         Dollar five = new Dollar(5);
