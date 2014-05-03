@@ -8,6 +8,8 @@ public class Money {
     protected int amount;
 
     // TODO-sin: hashCode()
+    // TODO-sin: Equal null
+    // TODO-sin: Equal object
     public boolean equals(Object object) {
         Money money = (Money)object;
         // TODO-sin: Currency?
