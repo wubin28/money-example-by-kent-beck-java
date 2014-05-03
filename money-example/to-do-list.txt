@@ -1,6 +1,6 @@
 $5 + 10 CHF = $10 if rate is 2:1
 (finsihed: $5 * 2 = $10)
-*working on: Make "amount" private
+(finished: Make "amount" private)
 (finished: Dollar side-effects?)
 Money rounding?
 (finished: equals())
