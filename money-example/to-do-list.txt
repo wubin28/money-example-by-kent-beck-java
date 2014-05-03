@@ -3,5 +3,5 @@ $5 + 10 CHF = $10 if rate is 2:1
 Make "amount" private
 (finished: Dollar side-effects?)
 Money rounding?
-equals()
-
+*working: equals()
+hashCode()
