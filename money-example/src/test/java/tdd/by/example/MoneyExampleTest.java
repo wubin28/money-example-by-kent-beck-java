@@ -31,6 +31,7 @@ public class MoneyExampleTest {
 
     @Test
     public void testFrancMultiplication() {
+        // TODO-sin: Delete testFrancMultiplication?
         Money five = Money.franc(5);
         assertEquals(Money.franc(10), five.times(2));
         assertEquals(Money.franc(15), five.times(3));
