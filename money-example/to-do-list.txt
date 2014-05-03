@@ -9,5 +9,5 @@ Equal null
 Equal object
 (finished: 5 CHF * 2 = 10 CHF)
 Dollar/Franc duplication
-*working on: Common equals
+(finished: Common equals)
 Common times
