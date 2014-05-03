@@ -10,6 +10,7 @@ public class Dollar extends Money {
         this.amount = amount;
     }
 
+    // TODO-sin: Common times
     public Dollar times(int multiplier) {
         return new Dollar(amount * multiplier);
     }
