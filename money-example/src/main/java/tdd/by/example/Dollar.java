@@ -15,4 +15,9 @@ public class Dollar extends Money {
         return new Dollar(amount * multiplier);
     }
 
+    @Override
+    public String currency() {
+        return "USD";
+    }
+
 }
