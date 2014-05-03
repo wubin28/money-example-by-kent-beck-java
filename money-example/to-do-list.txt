@@ -5,3 +5,6 @@ Make "amount" private
 Money rounding?
 (finished: equals())
 hashCode()
+Equal null
+Equal object
+
