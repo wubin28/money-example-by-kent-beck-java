@@ -11,7 +11,7 @@ public class Dollar extends Money {
     }
 
     // TODO-sin: Common times
-    public Dollar times(int multiplier) {
+    public Money times(int multiplier) {
         return new Dollar(amount * multiplier);
     }
 
