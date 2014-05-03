@@ -11,4 +11,4 @@ Equal object
 Dollar/Franc duplication
 (finished: Common equals)
 Common times
-Compare Francs with Dollars
+*working on: Compare Francs with Dollars
