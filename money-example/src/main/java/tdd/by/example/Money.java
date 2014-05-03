@@ -3,7 +3,7 @@ package tdd.by.example;
 /**
  * Created by benwu on 14-5-3.
  */
-public class Money {
+public abstract class Money {
     // TODO-sin: Money rounding?
     protected int amount;
 
@@ -20,4 +20,6 @@ public class Money {
     public static Dollar dollar(int amount) {
         return new Dollar(amount);
     }
+
+    public abstract Money times(int multiplier);
 }
