@@ -1,5 +1,5 @@
 $5 + 10 CHF = $10 if rate is 2:1
 (finsihed: $5 * 2 = $10)
 Make "amount" private
-*working: Dollar side-effects?
+(finished: Dollar side-effects?)
 Money rounding?
