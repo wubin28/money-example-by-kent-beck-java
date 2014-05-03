@@ -7,4 +7,5 @@ Money rounding?
 hashCode()
 Equal null
 Equal object
-*working on: 5 CHF * 2 = 10 CHF
+(finished: 5 CHF * 2 = 10 CHF)
+
