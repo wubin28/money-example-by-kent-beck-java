@@ -3,6 +3,7 @@ package tdd.by.example;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by benwu on 14-5-2.
@@ -15,5 +16,10 @@ public class MoneyExampleTest {
         assertEquals(10, product.amount);
         product = five.times(3);
         assertEquals(15, product.amount);
+    }
+
+    @Test
+    public void testEquality() {
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
     }
 }
