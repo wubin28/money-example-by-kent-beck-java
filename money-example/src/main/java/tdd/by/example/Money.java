@@ -7,6 +7,8 @@ public abstract class Money {
     // TODO-sin: Money rounding?
     protected int amount;
 
+    protected String currency;
+
     // TODO-sin: hashCode()
     // TODO-sin: Equal null
     // TODO-sin: Equal object
@@ -27,5 +29,8 @@ public abstract class Money {
         return new Franc(amount);
     }
 
-    public abstract String currency();
+    public String currency() {
+        return currency;
+    }
+
 }
