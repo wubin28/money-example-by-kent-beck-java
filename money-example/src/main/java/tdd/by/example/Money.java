@@ -19,9 +19,8 @@ public abstract class Money {
     // TODO-sin: Equal object
     public boolean equals(Object object) {
         Money money = (Money)object;
-        // TODO-working-on: Currency?
         return this.amount == money.amount
-                && this.getClass().equals(money.getClass());
+                && this.currency.equals(money.currency);
     }
 
     public static Money dollar(int amount) {
