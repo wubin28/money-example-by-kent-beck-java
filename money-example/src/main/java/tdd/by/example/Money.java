@@ -20,7 +20,7 @@ public class Money {
     public boolean equals(Object object) {
         Money money = (Money)object;
         return this.amount == money.amount
-                && this.currency.equals(money.currency);
+                && this.currency().equals(money.currency());
     }
 
     public static Money dollar(int amount) {
