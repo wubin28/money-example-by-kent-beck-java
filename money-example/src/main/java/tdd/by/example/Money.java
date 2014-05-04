@@ -27,8 +27,8 @@ public class Money {
         return new Dollar(amount, "USD");
     }
 
-    public  Money times(int multiplier) {
-        return null;
+    public Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
 
     public static Money franc(int amount) {

@@ -12,8 +12,4 @@ public class Dollar extends Money {
     }
 
     // TODO-sin-working-on: Common times
-    public Money times(int multiplier) {
-        return new Money(amount * multiplier, currency);
-    }
-
 }
