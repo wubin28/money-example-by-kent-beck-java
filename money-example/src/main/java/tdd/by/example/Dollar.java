@@ -8,8 +8,7 @@ public class Dollar extends Money {
     // TODO-sin: Dollar/Franc duplication
 
     public Dollar(int amount, String currency) {
-        this.amount = amount;
-        this.currency = currency;
+        super(amount, currency);
     }
 
     // TODO-sin: Common times

@@ -9,6 +9,11 @@ public abstract class Money {
 
     protected String currency;
 
+    public Money(int amount, String currency) {
+        this.amount = amount;
+        this.currency = currency;
+    }
+
     // TODO-sin: hashCode()
     // TODO-sin: Equal null
     // TODO-sin: Equal object
