@@ -7,14 +7,14 @@ public class Dollar extends Money {
 
     // TODO-sin: Dollar/Franc duplication
 
-    public Dollar(int amount) {
+    public Dollar(int amount, String currency) {
         this.amount = amount;
-        currency = "USD";
+        this.currency = currency;
     }
 
     // TODO-sin: Common times
     public Money times(int multiplier) {
-        return new Dollar(amount * multiplier);
+        return Money.dollar(amount * multiplier);
     }
 
 }
