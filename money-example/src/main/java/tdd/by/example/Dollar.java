@@ -9,6 +9,7 @@ public class Dollar extends Money {
 
     public Dollar(int amount) {
         this.amount = amount;
+        currency = "USD";
     }
 
     // TODO-sin: Common times
@@ -18,7 +19,6 @@ public class Dollar extends Money {
 
     @Override
     public String currency() {
-        currency = "USD";
         return currency;
     }
 
