@@ -5,7 +5,7 @@ package tdd.by.example;
  */
 public class Dollar extends Money {
 
-    // TODO-sin: Dollar/Franc duplication
+    // TODO-sin-working-on: Dollar/Franc duplication
 
     public Dollar(int amount, String currency) {
         super(amount, currency);
