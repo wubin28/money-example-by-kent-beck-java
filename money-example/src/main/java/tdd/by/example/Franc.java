@@ -5,9 +5,9 @@ package tdd.by.example;
  */
 public class Franc extends Money {
 
-    public Franc(int amount) {
+    public Franc(int amount, String currency) {
         this.amount = amount;
-        currency = "CHF";
+        this.currency = "CHF";
     }
 
     public Money times(int multiplier) {
