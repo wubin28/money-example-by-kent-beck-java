@@ -6,4 +6,8 @@ package tdd.by.example;
 public class Sum {
     public Money augend;
     public Money addend;
+
+    public Sum(Money augend, Money addend) {
+
+    }
 }
