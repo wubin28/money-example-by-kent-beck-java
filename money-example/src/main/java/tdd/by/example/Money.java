@@ -41,6 +41,6 @@ public class Money implements Expression {
 
     // TODO-story: Return Money from $5 + $5
     public Expression plus(Money addend) {
-        return new Money(amount + addend.amount, currency());
+        return new Sum(this, addend);
     }
 }
