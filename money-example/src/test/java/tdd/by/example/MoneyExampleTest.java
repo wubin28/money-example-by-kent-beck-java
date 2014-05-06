@@ -33,7 +33,6 @@ public class MoneyExampleTest {
         assertEquals("CHF", Money.franc(1).currency());
     }
 
-    // TODO-story-working-on: $5 + $5 = $10
     @Test
     public void testSimpleAddition() {
         Money five = Money.dollar(5);
@@ -43,5 +42,13 @@ public class MoneyExampleTest {
         assertEquals(Money.dollar(10), reduced);
     }
 
-
+    // TODO-story-working-on: $5 + $5 = $10
+    @Test
+    public void testPlusReturnsSum() {
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
+        Sum sum = (Sum)result;
+        assertEquals(five, sum.augend);
+        assertEquals(five, sum.addend);
+    }
 }
