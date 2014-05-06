@@ -12,7 +12,6 @@ import static org.junit.Assert.assertTrue;
 public class MoneyExampleTest {
 
     // TODO-story: $5 + 10 CHF = $10 if rate is 2:1
-    // TODO-story-working-on: $5 + $5 = $10
 
     @Test
     public void testMultiplication() {
@@ -34,7 +33,8 @@ public class MoneyExampleTest {
         assertEquals("CHF", Money.franc(1).currency());
     }
 
-    @Test
+    // TODO-story-working-on: $5 + $5 = $10
+
     public void testSimpleAddition() {
         Money five = Money.dollar(5);
         Expression sum = five.plus(five);
