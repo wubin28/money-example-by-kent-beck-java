@@ -34,7 +34,7 @@ public class MoneyExampleTest {
     }
 
     // TODO-story-working-on: $5 + $5 = $10
-
+    @Test
     public void testSimpleAddition() {
         Money five = Money.dollar(5);
         Expression sum = five.plus(five);
@@ -42,4 +42,6 @@ public class MoneyExampleTest {
         Money reduced = bank.reduce(sum, "USD");
         assertEquals(Money.dollar(10), reduced);
     }
+
+
 }
