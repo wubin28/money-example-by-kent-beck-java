@@ -61,11 +61,13 @@ public class MoneyExampleTest {
         assertEquals(Money.dollar(7), result);
     }
 
-    // TODO-story: Bank.reduce(Money)
     @Test
     public void testReduceMoney() {
         Bank bank = new Bank();
         Money result = bank.reduce(Money.dollar(1), "USD");
         assertEquals(Money.dollar(1), result);
     }
+
+    // TODO-story: Reduce Money with conversion
+    // TODO-story: Reduce(Bank, String)
 }
