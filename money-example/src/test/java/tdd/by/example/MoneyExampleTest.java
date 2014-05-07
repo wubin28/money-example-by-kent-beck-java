@@ -11,8 +11,6 @@ import static org.junit.Assert.assertTrue;
  */
 public class MoneyExampleTest {
 
-    // TODO-story-working-on: $5 + 10 CHF = $10 if rate is 2:1
-
     @Test
     public void testMultiplication() {
         Money five = Money.dollar(5);
@@ -78,6 +76,17 @@ public class MoneyExampleTest {
     @Test
     public void testIdentityRate() {
         assertEquals(1, new Bank().rate("USD", "USD"));
+    }
+
+    // TODO-story-working-on: $5 + 10 CHF = $10 if rate is 2:1
+    @Test
+    public void testMixedAddition() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
+        assertEquals(Money.dollar(10), result);
     }
 
 }
