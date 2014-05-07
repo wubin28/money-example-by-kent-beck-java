@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class MoneyExampleTest {
 
-    // TODO-story: $5 + 10 CHF = $10 if rate is 2:1
+    // TODO-story-working-on: $5 + 10 CHF = $10 if rate is 2:1
 
     @Test
     public void testMultiplication() {
