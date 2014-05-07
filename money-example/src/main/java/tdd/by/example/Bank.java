@@ -4,6 +4,16 @@ package tdd.by.example;
  * Created by benwu on 14-5-6.
  */
 public class Bank {
+    private class Pair {
+        private String from;
+        private String to;
+
+        Pair(String from, String to) {
+            this.from = from;
+            this.to = to;
+        }
+    }
+
     public Money reduce(Expression source, String to) {
         return source.reduce(this, to);
     }
