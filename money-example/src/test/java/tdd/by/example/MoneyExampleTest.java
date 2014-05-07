@@ -42,7 +42,7 @@ public class MoneyExampleTest {
         assertEquals(Money.dollar(10), reduced);
     }
 
-    // TODO-story-working-on: $5 + $5 = $10
+    // TODO-story: $5 + $5 = $10
     // TODO-story: Return Money from $5 + $5
     @Test
     public void testPlusReturnsSum() {
@@ -68,6 +68,6 @@ public class MoneyExampleTest {
         assertEquals(Money.dollar(1), result);
     }
 
-    // TODO-story: Reduce Money with conversion
+    // TODO-story-working-on: Reduce Money with conversion
     // TODO-story: Reduce(Bank, String)
 }
