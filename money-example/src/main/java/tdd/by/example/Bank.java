@@ -1,9 +1,12 @@
 package tdd.by.example;
 
+import java.util.Hashtable;
+
 /**
  * Created by benwu on 14-5-6.
  */
 public class Bank {
+    private Hashtable rates = new Hashtable();
     private class Pair {
         private String from;
         private String to;
