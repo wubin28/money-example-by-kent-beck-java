@@ -43,6 +43,7 @@ public class MoneyExampleTest {
     }
 
     // TODO-story-working-on: $5 + $5 = $10
+    // TODO-story: Return Money from $5 + $5
     @Test
     public void testPlusReturnsSum() {
         Money five = Money.dollar(5);
@@ -52,6 +53,7 @@ public class MoneyExampleTest {
         assertEquals(five, sum.addend);
     }
 
+    // TODO-story: Bank.reduce(Money)
     @Test
     public void testReduceSum() {
         Expression sum = new Sum(Money.dollar(3), Money.dollar(4));
