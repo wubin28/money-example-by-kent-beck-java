@@ -81,7 +81,7 @@ public class MoneyExampleTest {
     // TODO-story-working-on: $5 + 10 CHF = $10 if rate is 2:1
     @Test
     public void testMixedAddition() {
-        Money fiveBucks = Money.dollar(5);
+        Expression fiveBucks = Money.dollar(5);
         Expression tenFrancs = Money.franc(10);
         Bank bank = new Bank();
         bank.addRate("CHF", "USD", 2);
