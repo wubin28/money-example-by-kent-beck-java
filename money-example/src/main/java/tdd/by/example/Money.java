@@ -27,7 +27,7 @@ public class Money implements Expression {
         return new Money(amount, "USD");
     }
 
-    public Money times(int multiplier) {
+    public Expression times(int multiplier) {
         return new Money(amount * multiplier, currency);
     }
 
@@ -40,7 +40,7 @@ public class Money implements Expression {
     }
 
     // TODO-story: Return Money from $5 + $5
-    public Expression plus(Money addend) {
+    public Expression plus(Expression addend) {
         return new Sum(this, addend);
     }
 
