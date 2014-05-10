@@ -10,5 +10,4 @@ public interface Expression {
 
     Expression times(int multiplier);
 
-    // TODO-sin-working-on: Expression.times
 }
