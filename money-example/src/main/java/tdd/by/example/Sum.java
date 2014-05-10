@@ -16,4 +16,10 @@ public class Sum implements Expression{
         int amount = augend.reduce(bank, to).amount + addend.reduce(bank, to).amount;
         return new Money(amount, to);
     }
+
+    // TODO-sin: Sum.plus
+    @Override
+    public Expression plus(Expression addend) {
+        return null;
+    }
 }

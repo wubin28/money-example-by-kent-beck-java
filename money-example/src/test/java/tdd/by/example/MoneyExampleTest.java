@@ -78,7 +78,6 @@ public class MoneyExampleTest {
         assertEquals(1, new Bank().rate("USD", "USD"));
     }
 
-    // TODO-story-working-on: $5 + 10 CHF = $10 if rate is 2:1
     @Test
     public void testMixedAddition() {
         Expression fiveBucks = Money.dollar(5);
