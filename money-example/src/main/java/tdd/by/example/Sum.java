@@ -17,7 +17,6 @@ public class Sum implements Expression{
         return new Money(amount, to);
     }
 
-    // TODO-sin-working-on: Sum.plus
     @Override
     public Expression plus(Expression addend) {
         return new Sum(this, addend);
