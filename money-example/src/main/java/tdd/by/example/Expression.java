@@ -8,5 +8,5 @@ public interface Expression {
 
     Expression plus(Expression addend);
 
-    // TODO-sin: Expression.times
+    // TODO-sin-working-on: Expression.times
 }
